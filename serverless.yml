@@ -1,0 +1,16 @@
+service: firebase-custom-authorizer
+
+# Custom variables
+custom:
+  secrets: ${file(environment.json)}
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  region: ${self:custom.secrets.AWS_REGION}
+  profile: ${self:custom.secrets.AWS_PROFILE}
+
+functions:
+  auth:
+    handler: custom-authorizer.firebase
+    cors: true

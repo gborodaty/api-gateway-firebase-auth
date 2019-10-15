@@ -59,3 +59,23 @@ typings/
 
 # next.js build output
 .next
+
+####################
+
+# Project specific .gitignore directives
+
+# Local files
+environment.json
+serviceAccountKey.json
+.serverless/
+
+# Editor files
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/
