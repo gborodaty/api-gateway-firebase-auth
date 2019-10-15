@@ -3,14 +3,14 @@ Custom (Lambda) authorizer for AWS API Gateway that verifies client authorizatio
 
 ## Prerequisites
 The following resources are required for using the custom authorizer:
-1. A project using the following AWS resource - API Gateway, Lambda
-2. Deployment to AWS is done using the [Serverless framework](https://serverless.com)
+1. A project using the following AWS resources - API Gateway, Lambda
+2. Deployment to AWS using the [Serverless framework](https://serverless.com)
 3. An IAM user and user profile for your AWS serverless project deployment
 4. A Firebase project for authenticating users
 
 ## Required files
 Two local files need created that contain client secrets. These files are not included in the repository 
-and must **NOT** be added to the repository.
+and must **NOT** be added/committed to the repository.
 * An environment.json file that contains information specific to your AWS serverless environment and Firebase project. The file, at a minimum requires the following:  
 ```
 {
