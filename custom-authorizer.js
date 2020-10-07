@@ -24,7 +24,7 @@ const generateIamPolicy = (effect, resource, data) => {
   const user = {};
 
   // Populate the API Gateway user principalId with the Firebase user id, or 'unavailable' if not returned from Firebase
-  data ? authResponse.principalId = data.user_id : 'unavailable';
+  authResponse.principalId = data ? data.user_id : 'unavailable';
 
   // Map values into context object passed into Lambda function, if data is present
   if (data) {

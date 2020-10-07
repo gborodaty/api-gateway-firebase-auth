@@ -6,7 +6,7 @@ custom:
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
   region: ${self:custom.secrets.AWS_REGION}
   profile: ${self:custom.secrets.AWS_PROFILE}
 
